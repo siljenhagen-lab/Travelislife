@@ -1,5 +1,5 @@
 // Enkel service worker: henter fra nettet først, faller tilbake til hurtigbuffer uten nett.
-const CACHE = 'siljesreiser-v1';
+const CACHE = 'siljesreiser-v2';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
